@@ -1,0 +1,64 @@
+{
+  "name": "egg-cloud",
+  "version": "0.0.1",
+  "description": "A microservices framework for Node.js",
+  "main": "index.js",
+  "dependencies": {
+    "egg": "^2.12.0",
+    "egg-lookout": "^1.0.0",
+    "egg-opentracing": "^1.1.1",
+    "egg-opentracing-zipkin": "^1.0.0",
+    "egg-prometheus": "^1.0.1",
+    "egg-sofa-rpc": "^1.0.1",
+    "egg-sofa-tracer": "^1.1.0",
+    "egg-view-react": "^1.1.0",
+    "utility": "^1.15.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^4.9.0",
+    "egg-ci": "^1.9.2",
+    "egg-mock": "^3.20.1",
+    "egg-rpc-generator": "^1.0.0",
+    "eslint": "^5.6.1",
+    "eslint-config-egg": "^7.1.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "sh test/init.sh && egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run autod -- --check && npm run lint && egg-bin pkgfiles --check && npm run cov",
+    "autod": "autod",
+    "pkgfiles": "egg-bin pkgfiles"
+  },
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "egg",
+    "egg-cloud",
+    "egg-framework"
+  ],
+  "author": "gxcsoccer <gxcsoccer@126.com>",
+  "files": [
+    "app",
+    "config",
+    "lib",
+    "index.js"
+  ],
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
+  "license": "MIT"
+}
