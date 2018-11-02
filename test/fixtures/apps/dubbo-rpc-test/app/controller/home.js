@@ -4,8 +4,7 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    const data = await this.service.test.get('zongyu');
-    this.ctx.body = data;
+    this.ctx.body = await this.ctx.proxy.demoService.sayHello('gxcsoccer');
   }
 }
 
