@@ -1,8 +1,13 @@
 'use strict';
 
-exports.sofaRpc = {
+exports.rpc = {
   enable: true,
-  package: 'egg-sofa-rpc',
+  package: 'egg-rpc-base',
+};
+
+exports.dubboRpc = {
+  enable: true,
+  package: 'egg-dubbo-rpc',
 };
 
 exports.opentracing = {
@@ -15,19 +20,9 @@ exports.zipkin = {
   package: 'egg-opentracing-zipkin',
 };
 
-exports.sofaTracer = {
-  enable: true,
-  package: 'egg-sofa-tracer',
-};
-
 exports.prometheus = {
   enable: false,
   package: 'egg-prometheus',
-};
-
-exports.lookout = {
-  enable: false,
-  package: 'egg-lookout',
 };
 
 exports.react = {
