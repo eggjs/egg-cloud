@@ -25,7 +25,7 @@ exports.prometheus = {
   package: 'egg-prometheus',
 };
 
-exports.react = {
-  enable: false,
-  package: 'egg-view-react',
+exports.healthy = {
+  enable: true,
+  package: 'egg-healthy',
 };
