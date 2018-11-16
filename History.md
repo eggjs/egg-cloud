@@ -1,4 +1,10 @@
 
+0.1.0 / 2018-11-16
+==================
+
+**features**
+  * [[`1fe078c`](http://github.com/eggjs/egg-cloud/commit/1fe078c351d4cfaea85beca84690e3592367c6c4)] - feat: add egg-healthy (popomore <<sakura9515@gmail.com>>)
+
 0.0.2 / 2018-11-03
 ==================
 
