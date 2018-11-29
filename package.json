@@ -4,8 +4,9 @@
   "description": "A microservices framework for Node.js",
   "main": "index.js",
   "dependencies": {
-    "egg": "^2.13.0",
+    "egg": "^2.14.1",
     "egg-dubbo-rpc": "^1.0.0",
+    "egg-dubbo-tracer": "^1.0.0",
     "egg-healthy": "^1.0.0",
     "egg-opentracing": "^1.1.1",
     "egg-opentracing-zipkin": "^1.0.0",
