@@ -1,4 +1,10 @@
 
+0.2.0 / 2018-11-30
+==================
+
+**features**
+  * [[`22a291a`](http://github.com/eggjs/egg-cloud/commit/22a291aadbd1e22a1f1adf5eb61425bc694e6dae)] - feat: add egg-dubbo-tracer (gxcsoccer <<gxcsoccer@126.com>>)
+
 0.1.0 / 2018-11-16
 ==================
 
