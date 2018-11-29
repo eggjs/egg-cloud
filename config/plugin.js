@@ -10,6 +10,11 @@ exports.dubboRpc = {
   package: 'egg-dubbo-rpc',
 };
 
+exports.dubboTracer = {
+  enable: true,
+  package: 'egg-dubbo-tracer',
+};
+
 exports.opentracing = {
   enable: true,
   package: 'egg-opentracing',
